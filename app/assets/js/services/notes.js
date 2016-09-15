@@ -1,7 +1,4 @@
 angular.module('NoteWrangler')
   .factory('Notes', function($resource) {
-    //create json URL
-    // return $resrouce('url', {}, {
-    //   updateDatabase: { method: 'PUT' },
-    // })
+    return $resource('http://localhost:8000/server/notes.json');
   });
