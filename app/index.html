@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="NoteWrangler">
   <head>
     <meta charset="utf-8">
     <title>Note Wrangler</title>
+    <link rel="stylesheet" href="styles/bootstrap.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/bootstrap-theme.css" media="screen" title="no title">
   </head>
-
 
   <body>
 
+    <div ng-view></div>
+
   </body>
 
+  <!-- Vendor -->
+  <script src="assets/js/vendor/jquery-3.1.0.js" charset="utf-8"></script>
+  <script src="assets/js/vendor/bootstrap.js" charset="utf-8"></script>
+  <script src="assets/js/vendor/angular.js" charset="utf-8"></script>
+  <script src="assets/js/vendor/angular-route.js" charset="utf-8"></script>
+  <script src="assets/js/vendor/angular-resource.js" charset="utf-8"></script>
 
+  <!-- App -->
+  <script src="assets/js/app.js" charset="utf-8"></script>
+  <script src="assets/js/routes.js" charset="utf-8"></script>
 
+  <!-- Directives -->
+  <!-- Controllers -->
+  <script src="assets/js/controllers/notesIndexController.js" charset="utf-8"></script>
+  <script src="assets/js/controllers/ntoesShowController.js" charset="utf-8"></script>
+  <script src="assets/js/controllers/notesEditController.js" charset="utf-8"></script>
+  <script src="assets/js/controllers/notesCreateController.js" charset="utf-8"></script>
 
+  <!-- Services -->
+  <script src="assets/js/services/notes.js" charset="utf-8"></script>
 
+  <h1>Hello world!!</h1>
 
 </html>
