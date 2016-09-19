@@ -54,5 +54,4 @@ node_modules
 bower.json
 karma.conf.js
 LICENSE
-package.json
 app/bower_components
