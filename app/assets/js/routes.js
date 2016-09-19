@@ -15,7 +15,7 @@ angular.module('NoteWrangler')
         controller: "NotesShowController"
       })
       .when('/notes/:id/edit', {
-        templateUrl: "assets/templates/notes/ed.html",
+        templateUrl: "assets/templates/notes/edit.html",
         controller: "NotesEditController"
       })
   });
