@@ -18,4 +18,12 @@ angular.module('NoteWrangler')
         templateUrl: "assets/templates/notes/edit.html",
         controller: "NotesEditController"
       })
+      .when('/users', {
+        templateUrl: "assets/templates/users/index.html",
+        controller: "UsersIndexController"
+      })
+      .when('/users/:id', {  ///:id is a bit of a wildcard and the route goes through each item.
+        templateUrl: "assets/templates/users/show.html",
+        controller: "UsersShowController"
+      })
   });
