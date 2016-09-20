@@ -8,6 +8,16 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="#/">NoteWrangler</a>
+          </div>
+        </div>
+        <nw-page-nav></nw-page-nav>
+      </div>
+    </nav>
 
     <h1>Note Wrangler</h1>
 
@@ -27,14 +37,24 @@
   <script src="assets/js/routes.js" charset="utf-8"></script>
 
   <!-- Directives -->
+  <script src="assets/js/directives/nwPageNav.js" charset="utf-8"></script>
+  <script src="assets/js/directives/nwCategorySelector.js" charset="utf-8"></script>
+
   <!-- Controllers -->
   <script src="assets/js/controllers/notesIndexController.js" charset="utf-8"></script>
   <script src="assets/js/controllers/notesShowController.js" charset="utf-8"></script>
   <script src="assets/js/controllers/notesEditController.js" charset="utf-8"></script>
   <script src="assets/js/controllers/notesCreateController.js" charset="utf-8"></script>
+  <script src="assets/js/controllers/usersIndexController.js" charset="utf-8"></script>
+  <script src="assets/js/controllers/usersShowController.js" charset="utf-8"></script>
+
+  <!-- Filters -->
+  <script src="assets/js/filters/categoryFilter.js" charset="utf-8"></script>
 
   <!-- Services -->
   <script src="assets/js/services/notes.js" charset="utf-8"></script>
+  <script src="assets/js/services/users.js" charset="utf-8"></script>
+  <script src="assets/js/services/categories.js" charset="utf-8"></script>
 
 
 </html>
